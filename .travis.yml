@@ -1,7 +1,11 @@
 language: python
 python:
     - "2.7"
+    - "3.5"
 # Currently no dependencies other than nose
 # which is built in to travis
+
+install:
+  - pip install -r requirments.txt
 
 script: nosetests
